@@ -42,6 +42,25 @@ Response:
 }
 ```
 
+**POST /wp-json/set-views/v1/{slug}** <br>
+Sets the views count for the post with the specified slug. <br>
+
+Body Parameters <br>
+count: value <br>
+
+Example:
+
+```
+POST /wp-json/set-views/v1/my-post
+```
+Response:
+```
+200 OK
+{
+  "views_count": 43
+}
+```
+
 ## Notes
 This plugin uses the get_post_meta() and update_post_meta() functions to store and retrieve the views count. Therefore, it should work with any post type that supports custom fields.
 The slug parameter should match the post slug, not the post ID.
