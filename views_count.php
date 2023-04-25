@@ -2,6 +2,11 @@
 
 /**
  * Plugin Name: Views Count Endpoint
+ * Plugin URI: https://github.com/alexRicc2/post-view-counter
+ * Description: Post views for headless
+ * Version: 1.0.0
+ * Author: Alex
+ * Author URI: https://github.com/alexRicc2
  */
 
 function get_views_count($request)
